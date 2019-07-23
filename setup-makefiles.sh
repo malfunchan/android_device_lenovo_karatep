@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=karate
+DEVICE=karatep
 VENDOR=lenovo
 
 INITIAL_COPYRIGHT_YEAR=2016
