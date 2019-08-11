@@ -31,4 +31,4 @@
 
 void init_target_properties();
 
-#endif /* __INIT_KARATE__H__ */
+#endif /* __INIT_KARATEP__H__ */

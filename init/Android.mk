@@ -23,7 +23,7 @@ LOCAL_C_INCLUDES := \
     system/core/init
 LOCAL_CFLAGS := -Wall
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := init_karate.cpp
+LOCAL_SRC_FILES := init_karatep.cpp
 LOCAL_STATIC_LIBRARIES := \
     libbase \
     libselinux
@@ -31,6 +31,6 @@ LOCAL_STATIC_LIBRARIES := \
 ifneq ($(TARGET_LIBINIT_KARATE_DEFINES_FILE),)
     LOCAL_SRC_FILES += ../../../../$(TARGET_LIBINIT_KARATE_DEFINES_FILE)
 endif
-LOCAL_MODULE := libinit_karate
+LOCAL_MODULE := libinit_karatep
 
 include $(BUILD_STATIC_LIBRARY)
