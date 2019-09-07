@@ -1,3 +1,4 @@
+
 /*
  *
  *  Copyright (c) 2013, The Linux Foundation. All rights reserved.
@@ -25,6 +26,7 @@
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
 #define BLE_VND_INCLUDED   TRUE
+#define BTM_DEF_LOCAL_NAME "Lenovo K6 Note"
 // skips conn update at conn completion
 #define BT_CLEAN_TURN_ON_DISABLED 1
 
