@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := karatep
 PRODUCT_MANUFACTURER := lenovo
-PRODUCT_NAME := aosp_karate
+PRODUCT_NAME := aosp_karatep
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
