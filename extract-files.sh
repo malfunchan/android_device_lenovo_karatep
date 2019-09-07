@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=karate
+DEVICE=karatep
 VENDOR=lenovo
 
 # Load extract_utils and do some sanity checks
