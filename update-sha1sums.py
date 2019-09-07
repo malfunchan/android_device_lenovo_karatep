@@ -18,7 +18,7 @@
 
 from hashlib import sha1
 
-device='karate'
+device='karatep'
 vendor='lenovo'
 
 lines = [ line for line in open('proprietary-files.txt', 'r') ]
