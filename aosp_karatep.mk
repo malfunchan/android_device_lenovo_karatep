@@ -42,3 +42,5 @@ BUILD_FINGERPRINT := "Lenovo/karatep/K53:7.0/NRD90N/K53_S231_171114_ROW:user/rel
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
+    
+TARGET_GAPPS_ARCH := arm64    
