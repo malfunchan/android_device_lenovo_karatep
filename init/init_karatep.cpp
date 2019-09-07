@@ -40,7 +40,7 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
-#include "init_karate.h"
+#include "init_karatep.h"
 
 using android::base::GetProperty;
 using android::init::property_set;
