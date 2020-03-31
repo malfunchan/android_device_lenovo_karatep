@@ -1,4 +1,4 @@
-# Audio
+#Audio
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -17,21 +17,18 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libhwdaphal.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
 
-# Audio ACDB
-etc/acdbdata/msm8937-karatep-snd-card/Bluetooth_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/Bluetooth_cal.acdb
-etc/acdbdata/msm8937-karatep-snd-card/General_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/General_cal.acdb
-etc/acdbdata/msm8937-karatep-snd-card/Global_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/Global_cal.acdb
-etc/acdbdata/msm8937-karatep-snd-card/Handset_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/Handset_cal.acdb
-etc/acdbdata/msm8937-karatep-snd-card/Hdmi_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/Hdmi_cal.acdb
-etc/acdbdata/msm8937-karatep-snd-card/Headset_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/Headset_cal.acdb
-etc/acdbdata/msm8937-karatep-snd-card/Speaker_cal.acdb:vendor/etc/acdbdata/msm8937-karatep-snd-card/Speaker_cal.acdb
+#Audio ACDB
+vendor/etc/acdbdata/msm8937-karatep-snd-card/Bluetooth_cal.acdb
+vendor/etc/acdbdata/msm8937-karatep-snd-card/General_cal.acdb
+vendor/etc/acdbdata/msm8937-karatep-snd-card/Global_cal.acdb
+vendor/etc/acdbdata/msm8937-karatep-snd-card/Handset_cal.acdb
+vendor/etc/acdbdata/msm8937-karatep-snd-card/Hdmi_cal.acdb
+vendor/etc/acdbdata/msm8937-karatep-snd-card/Headset_cal.acdb
+vendor/etc/acdbdata/msm8937-karatep-snd-card/Speaker_cal.acdb
 
-# Camera 
-bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+#Camera
+vendor/bin/mm-qcamera-daemon
 vendor/lib/libivc_smartengine.so
 vendor/lib/libmpbase.so
 vendor/lib/libcamera_bm_algo.so
@@ -44,10 +41,9 @@ vendor/lib/libllvd_smore.so
 vendor/lib/libllvd_sw_tnr.so
 vendor/lib/libmotocalibration.so
 vendor/lib/libmmcamera_dw9767_karatepof_eeprom.so
-vendor/lib/libmmcamera_dw9767_karatepqt_eeprom.so
+vendor/lib/libmmcamera_dw9767_karatepsy_eeprom.so
 vendor/lib/libmmcamera_imx219_karatepof_eeprom.so
 vendor/lib/libmmcamera_imx219_karatepqt_eeprom.so
-vendor/lib/libmmcamera_imx258.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
@@ -61,6 +57,7 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_imx219.so
+vendor/lib/libmmcamera_s5k3p3.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_sw_tnr.so
@@ -99,11 +96,11 @@ vendor/lib/libts_face_beautify_hal.so
 vendor/lib/libubifocus.so
 vendor/lib/liboptizoom.so
 
-# Camera actuators 
+#Camera actuators
 vendor/lib/libactuator_dw9767_karatepof.so
-vendor/lib/libactuator_dw9767_karatepqt.so
+vendor/lib/libactuator_dw9767_karatepsy.so
 
-# Camera chromatix 
+#Camera chromatix
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
 vendor/lib/libchromatix_csidtg_postproc.so
@@ -145,52 +142,56 @@ vendor/lib/libchromatix_imx219_karatepqt_default_video.so
 vendor/lib/libchromatix_imx219_karatepqt_hfr_120.so
 vendor/lib/libchromatix_imx219_karatepqt_postproc.so
 vendor/lib/libchromatix_imx219_karatepqt_preview.so
-vendor/lib/libchromatix_imx219_karateqt_snapshot.so
+vendor/lib/libchromatix_imx219_karatepqt_snapshot.so
 vendor/lib/libchromatix_imx219_karatepqt_video_full.so
 vendor/lib/libchromatix_imx219_karatepqt_zsl_preview.so
 vendor/lib/libchromatix_imx219_karatepqt_zsl_video.so
-vendor/lib/libchromatix_imx258_karatepof_4k_preview_dw9767.so
-vendor/lib/libchromatix_imx258_karatepof_4k_video_dw9767.so
-vendor/lib/libchromatix_imx258_karatepof_common.so
-vendor/lib/libchromatix_imx258_karatepof_cpp_hfr_120.so
-vendor/lib/libchromatix_imx258_karatepof_cpp_liveshot.so
-vendor/lib/libchromatix_imx258_karatepof_cpp_preview.so
-vendor/lib/libchromatix_imx258_karatepof_cpp_snapshot.so
-vendor/lib/libchromatix_imx258_karatepof_cpp_video_4k.so
-vendor/lib/libchromatix_imx258_karatepof_cpp_video.so
-vendor/lib/libchromatix_imx258_karatepof_default_preview_dw9767.so
-vendor/lib/libchromatix_imx258_karatepof_default_video_dw9767.so
-vendor/lib/libchromatix_imx258_karatepof_default_video.so
-vendor/lib/libchromatix_imx258_karatepof_hfr_120_dw9767.so
-vendor/lib/libchromatix_imx258_karatepof_hfr_120.so
-vendor/lib/libchromatix_imx258_karatepof_postproc.so
-vendor/lib/libchromatix_imx258_karatepof_preview.so
-vendor/lib/libchromatix_imx258_karatepof_snapshot.so
-vendor/lib/libchromatix_imx258_karatepof_video_4k.so
-vendor/lib/libchromatix_imx258_karatepof_zsl_preview_dw9767.so
-vendor/lib/libchromatix_imx258_karatepof_zsl_video_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_4k_preview_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_4k_video_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_common.so
-vendor/lib/libchromatix_imx258_karatepqt_cpp_hfr_120.so
-vendor/lib/libchromatix_imx258_karatepqt_cpp_liveshot.so
-vendor/lib/libchromatix_imx258_karatepqt_cpp_preview.so
-vendor/lib/libchromatix_imx258_karatepqt_cpp_snapshot.so
-vendor/lib/libchromatix_imx258_karatepqt_cpp_video_4k.so
-vendor/lib/libchromatix_imx258_karatepqt_cpp_video.so
-vendor/lib/libchromatix_imx258_karatepqt_default_preview_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_default_video_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_default_video.so
-vendor/lib/libchromatix_imx258_karatepqt_hfr_120_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_hfr_120.so
-vendor/lib/libchromatix_imx258_karatepqt_postproc.so
-vendor/lib/libchromatix_imx258_karatepqt_preview.so
-vendor/lib/libchromatix_imx258_karatepqt_snapshot.so
-vendor/lib/libchromatix_imx258_karatepqt_video_4k.so
-vendor/lib/libchromatix_imx258_karatepqt_zsl_preview_dw9767.so
-vendor/lib/libchromatix_imx258_karatepqt_zsl_video_dw9767.so
+vendor/lib/libchromatix_s5k3p3_karatepof_common.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_liveshot.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_preview.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_snapshot.so
+vendor/lib/libchromatix_s5k3p3_karatepof_cpp_video.so
+vendor/lib/libchromatix_s5k3p3_karatepof_default_preview_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepof_default_video.so
+vendor/lib/libchromatix_s5k3p3_karatepof_default_video_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepof_hfr_120.so
+vendor/lib/libchromatix_s5k3p3_karatepof_hfr_120_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepof_hfr_60.so
+vendor/lib/libchromatix_s5k3p3_karatepof_hfr_60_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepof_hfr_90.so
+vendor/lib/libchromatix_s5k3p3_karatepof_hfr_90_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepof_postproc.so
+vendor/lib/libchromatix_s5k3p3_karatepof_preview.so
+vendor/lib/libchromatix_s5k3p3_karatepof_snapshot.so
+vendor/lib/libchromatix_s5k3p3_karatepof_zsl_preview_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepof_zsl_video_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_common.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_liveshot.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_preview.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_snapshot.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_cpp_video.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_default_preview_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_default_video.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_default_video_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_hfr_120.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_hfr_120_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_hfr_60.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_hfr_60_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_hfr_90.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_hfr_90_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_postproc.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_preview.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_snapshot.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_zsl_preview_dw9800.so
+vendor/lib/libchromatix_s5k3p3_karatepsy_zsl_video_dw9800.so
 
-# Camera firmware 
+#Camera firmware
 vendor/firmware/cpp_firmware_v1_1_1.fw
 vendor/firmware/cpp_firmware_v1_1_6.fw
 vendor/firmware/cpp_firmware_v1_10_0.fw
@@ -201,7 +202,7 @@ vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
-# Camera sensors 
+#Camera sensors
 vendor/lib/libmmcamera_isp_abf40.so
 vendor/lib/libmmcamera_isp_bcc40.so
 vendor/lib/libmmcamera_isp_be_stats44.so
@@ -237,31 +238,28 @@ vendor/lib/libmmcamera_isp_sub_module.so
 vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 
-# Display calibration
--etc/qdcm_calib_data_ili7807d_1080p_video_YAS.xml
--etc/qdcm_calib_data_ili7807d_2nd_1080p_video_YAS.xml
--etc/qdcm_calib_data_otm1901a_1080p_video_TianMa_G6.xml
--etc/qdcm_calib_data_otm1901a_1080p_video_TianMa.xml
+#Display calibration
+-vendor/etc/qdcm_calib_data_hx8399c_1080p_video_tm.xml
+-vendor/etc/qdcm_calib_data_ili7807d_1080p_video_DJN.xml
+-vendor/etc/qdcm_calib_data_nt35596_1080p_video_tm.xml
 
-# Fingerprint 
-vendor/hw/lib/fingerprint.default.so
+#Fingerprint
+vendor/lib/hw/fingerprint.msm8937.so
 vendor/lib/libcom_fingerprints_service.so
 vendor/lib/lib_fpc_tac_shared.so
-vendor/hw/lib64/fingerprint.default.so
+vendor/lib64/hw/fingerprint.msm8937.so
 vendor/lib64/libcom_fingerprints_service.so
 vendor/lib64/lib_fpc_tac_shared.so
-vendor/lib/fingerprint.msm8937.so
-vendor/lib64/fingerprint.msm8937.so
 
-# Graphics firmware  
-vendor/firmware/a530_gpmu.fw2 
-vendor/firmware/a530_pfp.fw 
-vendor/firmware/a530_pm4.fw 
-vendor/firmware/a530v1_pfp.fw 
-vendor/firmware/a530v1_pm4.fw 
-vendor/firmware/a530v2_seq.fw2 
-vendor/firmware/a530v3_gpmu.fw2 
+#Graphics firmware
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
 vendor/firmware/a530v3_seq.fw2
 
-# WIFI
+#WiFi
 vendor/bin/wcnss_service
