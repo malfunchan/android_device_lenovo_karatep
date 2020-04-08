@@ -18,9 +18,10 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/aosp/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Inherit from karatep device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,19 +29,19 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := karatep
 PRODUCT_MANUFACTURER := lenovo
-PRODUCT_NAME := aosp_karatep
+PRODUCT_NAME := lineage_karatep
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
-TARGET_VENDOR_PRODUCT_NAME := karate
+TARGET_VENDOR_PRODUCT_NAME := karatep
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="karatep-user 7.0 NRD90N K33_S231_171114_ROW release-keys"
+    PRIVATE_BUILD_DESC="karatep-user 7.0 NRD90N K35_S221_171114_ROW release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and boot image
 BUILD_FINGERPRINT := "Lenovo/karatep/K53:7.0/NRD90N/K53_S231_171114_ROW:user/release-keys"
 
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
     ro.product.model
-    
-TARGET_GAPPS_ARCH := arm64    
+
+TARGET_GAPPS_ARCH := arm64
