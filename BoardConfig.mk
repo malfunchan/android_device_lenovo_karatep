@@ -174,7 +174,7 @@ ifeq ($(HOST_OS),linux)
         WITH_DEXPREOPT := true
     endif
 endif
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+#PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # Malloc
 MALLOC_SVELTE := true
@@ -207,7 +207,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 TARGET_PER_MGR_ENABLED := true
 
 # Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+#TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Power
 TARGET_HAS_NO_WIFI_STATS := true
