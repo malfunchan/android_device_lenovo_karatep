@@ -57,6 +57,8 @@ endif
 
 #HAL 1.0 Flags
 LOCAL_CFLAGS += -DDEFAULT_DENOISE_MODE_ON -DHAL3 -DQCAMERA_REDEFINE_LOG
+#Allow implicit fallthroughs in QCamera2HWI.cpp until they are fixed
+LOCAL_CFLAGS += -Wno-implicit-fallthrough
 
 LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../mm-image-codec/qexif \
