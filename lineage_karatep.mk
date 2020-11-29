@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common AOSP stuff
-$(call inherit-product, vendor/havoc/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Inherit from karatep device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,7 +29,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := karatep
 PRODUCT_MANUFACTURER := lenovo
-PRODUCT_NAME := havoc_karatep
+PRODUCT_NAME := lineage_karatep
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
